@@ -10,9 +10,8 @@ public class MenuManager : MonoBehaviour
 
     [Header("player&SpawnPositions")]
     [SerializeField] Transform Player, mainCamera;
-    [SerializeField] GameObject DragObj;
-    [SerializeField] Transform[] pos;
-   
+    [SerializeField] GameObject DragTile;
+    [SerializeField] Transform[] playerPos;
 
 
 
@@ -27,112 +26,101 @@ public class MenuManager : MonoBehaviour
 
     [Header("Activity 2 Menu Atributes")]
 
+    bool AreadyAsked;
+    [SerializeField] GameObject Highlite;
+
+
+
+
+
 
 
     [Header("Activity 1 Atributes")]
-    [SerializeField] GameObject Activity1lerningObjaectivePanel;
-    [SerializeField] GameObject Activity1_1ObjaectivePanel;
-    [SerializeField] GameObject Activity1_1Board;
-    [SerializeField] int Activity1_1Max_Value;
-    [SerializeField] int Activity1_1EndPandel_Value;
-    [SerializeField] GameObject Activity1_1EndPanel;
 
-
-
-    [SerializeField] GameObject Activity1_2ObjaectivePanel;
-    [SerializeField] GameObject Activity1_2Board;
-    [SerializeField] int Activity1_2Max_Value;
-   
-    [SerializeField] int Activity1_2EndPandel_Value;
-    [SerializeField] GameObject Activity1_2EndPanel;
-
-
-
-    [SerializeField] GameObject Activity1_3ObjaectivePanel;
-    [SerializeField] GameObject Activity1_3Board;
-    [SerializeField] int Activity1_3Max_Value;
-    [SerializeField] int Activity1_3EndPandel_Value;
-    [SerializeField] GameObject Activity1_3EndPanel;
-
-
-    [SerializeField] GameObject Activity1Summary;
-    [SerializeField] GameObject Activity1Summary1;
-
-    
-    
+    [SerializeField] GameObject Screen1Panel;
+    [SerializeField] GameObject Screen2Panel;
+    [SerializeField] GameObject Screen3Panel;
+    [SerializeField] GameObject Screen4Panel;
+    [SerializeField] GameObject Screen5Panel;
+    [SerializeField] GameObject Screen6panel;
+    [SerializeField] GameObject Screen7panel;
+    [SerializeField] GameObject Screen8panel;
+    [SerializeField] GameObject Screen9panel;
+    [SerializeField] GameObject Screen10panel;
 
 
 
 
-    [Header("Activity 2 Atributes")]
+    [SerializeField] GameObject Rist2Start;
+
+    [SerializeField] GameObject CallArrow;
+    [SerializeField] GameObject StartCalling;
+    [SerializeField] GameObject DailCall;
+    [SerializeField] GameObject Arrwo2;
+    [SerializeField] GameObject EndRegis;
+    [SerializeField] TMPro.TextMeshProUGUI VideoCallText;
+    [SerializeField] GameObject Screensaver;
 
 
 
-
-    [SerializeField] GameObject Activity2lerningObjaectivePanel;
-    [SerializeField] GameObject Activity2lerningObjaectivePanel1;
-
-    [SerializeField] GameObject Activity2_1InstructionsPanel;
-    [SerializeField] GameObject Activity2_1Board;
-    [SerializeField] int Activity2_1Max_Value;
-    [SerializeField] int Activity2_1EndPandel_Value;
-    [SerializeField] GameObject Activity2_1EndPanel;
-
-
-    [SerializeField] GameObject Activity2_2InstructionsPanel;
-    [SerializeField] GameObject Activity2_2EndPanel;
-    [SerializeField] GameObject Activity2_2Board;
-    [SerializeField] int Activity2_2Max_Value;
-    [SerializeField] int Activity2_2EndPandel_Value;
-
-
-    [SerializeField] GameObject Activity2_3InstructionsPanel;
-    [SerializeField] GameObject Activity2_3Board;
-    [SerializeField] int Activity2_3Max_Value;
-    [SerializeField] int Activity2_3EndPandel_Value;
-    [SerializeField] GameObject Activity2_3EndPanel;
-
-    [SerializeField] GameObject Activity2_4InstructionsPanel;
-    [SerializeField] GameObject Activity2_4Board;
-    [SerializeField] int Activity2_4Max_Value;
-    [SerializeField] int Activity2_4EndPandel_Value;
-    [SerializeField] GameObject Activity2_4EndPanel;
-
-
-    [SerializeField] GameObject Activity2_Summary;
-
-
-
-
-    [Header("Activity 3 Atributes")]
-
-    [SerializeField] GameObject Activity3objective;
-    [SerializeField] GameObject Activity3objective1;
-    [SerializeField] GameObject Activity3SpawnPoints;   
-
-
-
-
-    [Header("AllBoard")]
-    int BordsSovedMaxValue;
-    [SerializeField] int BoardIndexNo;
-    int ActivityEndPanelNo;
-    int SavePos;
-
-
-
-
-
-
-    [Header("Activity4")]
-    [SerializeField] GameObject Activity4Istrution;
-    [SerializeField] GameObject Activity4Questions;
-    [SerializeField] GameObject Status;
-    [SerializeField] TMPro.TextMeshProUGUI Activity4QuestionText;
-    [SerializeField] TMPro.TextMeshProUGUI Activity4StatrusText;
+    [Header("Questions")]
+    [SerializeField] GameObject QuestionPanel;
+    [SerializeField] TMPro.TextMeshProUGUI QuestionText;
+    [SerializeField] GameObject QuestionStatus;
+    [SerializeField] string SelectedAns;
+    [SerializeField] TMPro.TextMeshProUGUI StatusText;
     [SerializeField] int QuestionNo;
-    [SerializeField] string OptionSelected; 
+    [SerializeField] bool CheckAns;
 
+    [SerializeField] GameObject CompleteDes;
+    [SerializeField] GameObject CompletePi1;
+    [SerializeField] GameObject CompletePi2;
+    [SerializeField] GameObject Risk1;
+    [SerializeField] GameObject Risk2;
+    [SerializeField] Transform[] RiskB1pos;
+
+
+    [Header("Boards")]
+    [SerializeField] GameObject[] Pi1boards;
+    [SerializeField] GameObject[] Pi2boards;
+    [SerializeField] GameObject[] Reqister1boards;
+    [SerializeField] GameObject[] Reqister2boards;
+     
+
+    [Header("PuzzelNo")]
+    int PuzzelMaxNo;
+    [SerializeField] int PuzzelIndex;
+    int MenuNo;
+
+
+
+    int Question_NO;
+    int SelectedANO;
+    [SerializeField] GameObject QuestionsIstructionPanel;
+    [SerializeField] GameObject Questions;
+    [SerializeField] GameObject RightAnswer;
+    [SerializeField] GameObject Answers;
+
+    [SerializeField] TMPro.TextMeshProUGUI Question, Question1;
+
+    [SerializeField] TMPro.TextMeshProUGUI[] Options;
+    [SerializeField] TMPro.TextMeshProUGUI AnswerStatus;
+    [SerializeField] TMPro.TextMeshProUGUI[] AllAnswers;
+    [SerializeField] TMPro.TextMeshProUGUI ButtionText;
+    bool ISAnsTrue;
+
+
+    [SerializeField] Sprite SpriteSelectedAns;
+    [SerializeField] Sprite NonSelect;
+
+    
+
+    bool AskQuestion;
+
+
+
+    [Header("NPC_Audio")]
+ 
 
 
     [SerializeField] AudioSource NpcAudio;
@@ -145,26 +133,30 @@ public class MenuManager : MonoBehaviour
     private const int AUDIO_SAMPLE_LENGTH = 4096;
     private const int AMPLITUDE_MULTIPLIER = 10;
 
-   
-   
+    
 
 
 
-    bool AskQuestion;
+
 
 
     private void Start()
     {
-        QuestionNo = 0;
-        SavePos = 0;
-        Activity1_1Board.transform.GetChild(1).gameObject.SetActive(true);
-        Activity1lerningObjaectivePanel.SetActive(true);
-
-
-
+        QuestionNo = 1;
+        Question_NO =1;
     }
     public void Menu(int no)
     {
+        if (no == 17)
+        {
+            DragTile.SetActive(true);
+        }
+        else
+        {
+            DragTile.SetActive(false);  
+        }
+
+
         switch (no)
         {
             #region First Panel
@@ -172,7 +164,7 @@ public class MenuManager : MonoBehaviour
             case 16: //First
                 First.SetActive(false);
                 SelectCoure.SetActive(true);
-                
+
                 break;
 
             #endregion
@@ -180,341 +172,427 @@ public class MenuManager : MonoBehaviour
             #region Menu Selection
 
             case 2:// Select Activity 1         
-                Arrow.SetActive(false);
-                //Activity2.SetActive(false);
-                //Activity1.SetActive(true);
-                mainCamera.GetComponent<UnityTemplateProjects.SimpleCameraController>().enabled = false;
                 
-                Player.transform.position = pos[SavePos].transform.position;
-                Player.transform.rotation = pos[SavePos].transform.rotation;
-                mainCamera.GetComponent<UnityTemplateProjects.SimpleCameraController>().enabled = true;
 
+               
+                mainCamera.GetComponent<UnityTemplateProjects.SimpleCameraController>().enabled = false;
+                Player.transform.position = playerPos[2].transform.position;
+                Player.transform.rotation = playerPos[2].transform.rotation;
+                mainCamera.GetComponent<UnityTemplateProjects.SimpleCameraController>().enabled = true;
+               
                 break;
 
             case 17: // Select Activity 2
-                mainCamera.GetComponent<UnityTemplateProjects.SimpleCameraController>().enabled = false;
 
-                Player.transform.position = pos[10].transform.position;
-                Player.transform.rotation = pos[10].transform.rotation;
-                mainCamera.GetComponent<UnityTemplateProjects.SimpleCameraController>().enabled = true;          
+                mainCamera.GetComponent<UnityTemplateProjects.SimpleCameraController>().enabled = false;
+                Player.transform.position = playerPos[5].transform.position;
+                Player.transform.rotation = playerPos[5].transform.rotation;
+                mainCamera.GetComponent<UnityTemplateProjects.SimpleCameraController>().enabled = true;
                 break;
 
             #endregion
-
-            #region Activity1 
-            case 3: //Activity 1.1 Objective 
-                Activity1lerningObjaectivePanel.SetActive(false);
-                Activity1_1ObjaectivePanel.SetActive(true);
-                break;
-            case 4: //Activity 1.1 Start
-                Activity1lerningObjaectivePanel.SetActive(false);
-                Activity1_1ObjaectivePanel.SetActive(false);
-                Activity1_1Board.transform.GetChild(0).gameObject.SetActive(true);
-                BoardIndexNo = 0;
-                BordsSovedMaxValue = Activity1_1Max_Value;
-                ActivityEndPanelNo = Activity1_1EndPandel_Value;
-
-                break;
-            case 5: //Activity 1.1 end
-                Activity1lerningObjaectivePanel.SetActive(false);
-                Activity1_1ObjaectivePanel.SetActive(false);
-                Activity1_1EndPanel.SetActive(true);
+            case 3:
+                Screen1Panel.SetActive(false);
+                Screen2Panel.SetActive(true);
                 break;
 
-            case 6: //Activity 1.2 Objective
-                Activity1lerningObjaectivePanel.SetActive(false);
-                Activity1_2ObjaectivePanel.SetActive(true); 
-                Activity1_1ObjaectivePanel.SetActive(false);
-                Activity1_1EndPanel.SetActive(false);
+            case 4:
+                Screen1Panel.SetActive(false);
+                Screen2Panel.SetActive(false);
+                Screen3Panel.SetActive(true);
+                break;
+
+            case 5:
+                Screen1Panel.SetActive(false);
+                Screen2Panel.SetActive(false);
+                Screen3Panel.SetActive(true);
                 mainCamera.GetComponent<UnityTemplateProjects.SimpleCameraController>().enabled = false;
-                Activity1_1Board.transform.GetChild(1).gameObject.SetActive(false);
-                Player.transform.position = pos[1].transform.position;
-                Player.transform.rotation = pos[1].transform.rotation;
+                Player.transform.position = playerPos[1].transform.position;
+                Player.transform.rotation = playerPos[1].transform.rotation;
                 mainCamera.GetComponent<UnityTemplateProjects.SimpleCameraController>().enabled = true;
-                Activity1_2Board.transform.GetChild(1).gameObject.SetActive(true);
+
+                Reqister1boards[0].SetActive(true);
+
+                MenuNo = 22;
+                PuzzelMaxNo = 7;
 
                 break;
-            case 7: //Activity 1.1 Start
-                Activity1lerningObjaectivePanel.SetActive(false);
-                Activity1_2ObjaectivePanel.SetActive(false);
-                Activity1_2Board.transform.GetChild(0).gameObject.SetActive(true);
-                BoardIndexNo = 0;
-                BordsSovedMaxValue = Activity1_2Max_Value;
-                ActivityEndPanelNo = Activity1_2EndPandel_Value;
-                break;
 
-            case 8: //Activity 1.2 end             
-                Activity1_2ObjaectivePanel.SetActive(false);
-                Activity1_2EndPanel.SetActive(true);
-                break;
-
-            case 9: //Activity 1.3 Objective
-                Activity1lerningObjaectivePanel.SetActive(false);
-                Activity1_2ObjaectivePanel.SetActive(false);
-                Activity1_3ObjaectivePanel.SetActive(true);
-                Activity1_2EndPanel.SetActive(false);
+            case 6: // You completed Description
+                Arrow.SetActive(true);
+                Screen3Panel.SetActive(false);
+                Screen4Panel.SetActive(true);
+                CompleteDes.SetActive(false);
                 mainCamera.GetComponent<UnityTemplateProjects.SimpleCameraController>().enabled = false;
-                Activity1_2Board.transform.GetChild(1).gameObject.SetActive(false);
-                Player.transform.position = pos[2].transform.position;
-                Player.transform.rotation = pos[2].transform.rotation;
-                mainCamera.GetComponent<UnityTemplateProjects.SimpleCameraController>().enabled = true;
-                break;
-
-            case 10: //Activity 1.1 Start
-                Activity1lerningObjaectivePanel.SetActive(false);
-                Activity1_3ObjaectivePanel.SetActive(false);
-                Activity1_3Board.transform.GetChild(0).gameObject.SetActive(true);
-                BoardIndexNo = 0;
-                BordsSovedMaxValue = Activity1_3Max_Value;
-                ActivityEndPanelNo = Activity1_3EndPandel_Value;
-                break;
-
-            case 11: //Activity 1.3 end             
-                Activity1_3ObjaectivePanel.SetActive(false);
-                Activity1_3EndPanel.SetActive(true);
-                break;
-
-
-            case 12: //Activity 1 Summary
-                Activity1_3EndPanel.SetActive(false);
-                Activity1Summary.SetActive(true);
-                break;
-            case 13: //Activity 1 Summary1
-                Activity1_3EndPanel.SetActive(false);
-                Activity1Summary.SetActive(false);
-                Activity1Summary1.SetActive(true);
-                break;
-
-            case 14: //Activity 2 objective
-                Activity1_3EndPanel.SetActive(false);
-                Activity1Summary.SetActive(false);
-                Activity1Summary1.SetActive(false);
-                Activity2lerningObjaectivePanel.SetActive(true);
-                mainCamera.GetComponent<UnityTemplateProjects.SimpleCameraController>().enabled = false;
-                Activity1_3Board.transform.GetChild(1).gameObject.SetActive(false);
-                Player.transform.position = pos[3].transform.position;
-                Player.transform.rotation = pos[3].transform.rotation;
-                mainCamera.GetComponent<UnityTemplateProjects.SimpleCameraController>().enabled = true;
-                Activity2_1Board.transform.GetChild(1).gameObject.SetActive(true);
-                break;
-
-                //Activity2
-
-            case 15: //Activity 2 objective1
-                Activity2lerningObjaectivePanel.SetActive(false);
-                Activity2lerningObjaectivePanel1.SetActive(true);
-                break;
-            case 18: //Activity 2.1 OpenIns
-                Activity2lerningObjaectivePanel.SetActive(false);
-                Activity2lerningObjaectivePanel1.SetActive(false);
-                Activity2_1InstructionsPanel.SetActive(true);
-                break;
-            case 19: //Activity 2.1 Start //Description
-                Activity2lerningObjaectivePanel.SetActive(false);
-                Activity2lerningObjaectivePanel1.SetActive(false);
                 
-                Activity2_1InstructionsPanel.SetActive(false);
-                Activity2_1Board.transform.GetChild(0).gameObject.SetActive(true);
-                BoardIndexNo = 0;
-                BordsSovedMaxValue = Activity2_1Max_Value;
-                ActivityEndPanelNo = 20;
-                break;
-            case 20: //Activity 2.1 Start //ProjectDiary
-                Activity2lerningObjaectivePanel.SetActive(false);
-                Activity2lerningObjaectivePanel1.SetActive(false);
-                Activity2_1InstructionsPanel.SetActive(false);
-                Activity2_1Board.transform.GetChild(0).GetChild(1).gameObject.SetActive(true);
-                Activity2_1Board.transform.GetChild(0).GetChild(3).gameObject.SetActive(true);
-                BoardIndexNo = 0;
-                BordsSovedMaxValue = Activity2_1Max_Value;
-                ActivityEndPanelNo = 21;
-                break;
-            case 21: //Activity 2.1 End     
-                Activity2lerningObjaectivePanel.SetActive(false);
-                Activity2lerningObjaectivePanel1.SetActive(false);
-                Activity2_1InstructionsPanel.SetActive(false);
-                Activity2_1EndPanel.SetActive(true);
+                Player.transform.position = playerPos[2].transform.position;
+                Player.transform.rotation = playerPos[2].transform.rotation;
+                mainCamera.GetComponent<UnityTemplateProjects.SimpleCameraController>().enabled = true;
+                DailCall.SetActive(true);
+
+                Highlite.transform.GetChild(0).GetComponent<Animation>().Stop();
+                Highlite.transform.GetChild(0).GetComponent<Image>().color = Color.white;
+                Highlite.transform.GetChild(1).GetComponent<Animation>().Play();
                 
+
+
+
                 break;
 
-            case 22: //Activity 2.2 Start
-                Activity2lerningObjaectivePanel.SetActive(false);
-                Activity2_2InstructionsPanel.SetActive(true);
-                Activity2_1EndPanel.SetActive(false);
+            case 7: // pick A call
+                DailCall.SetActive(false);
+                StartCalling.SetActive(true);
+
+
+
+                break;
+
+            case 8: // pick A call
+                DailCall.SetActive(false);
+                StartCalling.SetActive(true);
+                break;
+            case 9: // pick A call
+                Arrow.SetActive(false);
+                Arrwo2.SetActive(true);
+                Screen5Panel.SetActive(true);
+                
+                Screen10panel.SetActive(false);
+                break;
+
+            case 10: // To PI boaed1
+
+
+                Highlite.transform.GetChild(1).GetComponent<Animation>().Stop();
+                Highlite.transform.GetChild(1).GetComponent<Image>().color = Color.white;
+                Highlite.transform.GetChild(3).GetComponent<Animation>().Play();
+
+                Screensaver.SetActive(false);
+
+
+              
+
+
                 mainCamera.GetComponent<UnityTemplateProjects.SimpleCameraController>().enabled = false;
-                Activity2_1Board.transform.GetChild(1).gameObject.SetActive(false);
-                Activity2_2Board.transform.GetChild(1).gameObject.SetActive(true);
-                Player.transform.position = pos[4].transform.position;
-                Player.transform.rotation = pos[4].transform.rotation;
-                mainCamera.GetComponent<UnityTemplateProjects.SimpleCameraController>().enabled = true;
-                break;
-            case 23: //Activity 2.2 lerningObjective
-                Activity2_2Board.transform.GetChild(0).gameObject.SetActive(true);
-                Activity2_2InstructionsPanel.SetActive(false);
-                BoardIndexNo = 0;
-                BordsSovedMaxValue = Activity2_2Max_Value;
-                ActivityEndPanelNo = 24;
-                break;
-            case 24: //Activity 2.2 End
-                Activity2_2EndPanel.SetActive(true);
-                Activity2_2InstructionsPanel.SetActive(false);
-                break;
-            case 25: //Activity 2.3 Start
-                Activity2lerningObjaectivePanel.SetActive(false);
-                Activity2_3InstructionsPanel.SetActive(true);
-                Activity2_2EndPanel.SetActive(false);
-                mainCamera.GetComponent<UnityTemplateProjects.SimpleCameraController>().enabled = false;
-                Activity2_2Board.transform.GetChild(1).gameObject.SetActive(false);
-                Activity2_3Board.transform.GetChild(1).gameObject.SetActive(true);
-                Player.transform.position = pos[5].transform.position;
-                Player.transform.rotation = pos[5].transform.rotation;
+                Player.transform.position = playerPos[0].transform.position;
+                Player.transform.rotation = playerPos[0].transform.rotation;
                 mainCamera.GetComponent<UnityTemplateProjects.SimpleCameraController>().enabled = true;
 
-                break;
-            case 26: //Activity 2.3 lerningObjective
-                Activity2_3Board.transform.GetChild(0).gameObject.SetActive(true);
-                Activity2_3InstructionsPanel.SetActive(false);
-                BoardIndexNo = 0;
-                BordsSovedMaxValue = Activity2_3Max_Value;
-                ActivityEndPanelNo = 27;
-                break;
-            case 27: //Activity 2.3 //Product description example
-                Activity2_3Board.transform.GetChild(0).GetChild(1).gameObject.SetActive(true);
-                Activity2_3Board.transform.GetChild(0).GetChild(3).gameObject.SetActive(true);
-                Activity2_3InstructionsPanel.SetActive(false);
-                BoardIndexNo = 0;
-                BordsSovedMaxValue = Activity2_3Max_Value;
-                ActivityEndPanelNo = 28;
-                break;
-            case 28: //Activity 2.3 End
-                Activity2_3EndPanel.SetActive(true);
-                Activity2_3InstructionsPanel.SetActive(false);
+                Boardpi1(QuestionNo);
+                PuzzelMaxNo = 1;
+                MenuNo = 24;
+
                 break;
 
-            case 29: //Activity 2.4 Start
-                Activity2lerningObjaectivePanel.SetActive(false);
-                Activity2_3EndPanel.SetActive(false);
-                Activity2_4InstructionsPanel.SetActive(true);
-                mainCamera.GetComponent<UnityTemplateProjects.SimpleCameraController>().enabled = false;
-                Activity2_4Board.transform.GetChild(1).gameObject.SetActive(true);
-                Activity2_3Board.transform.GetChild(1).gameObject.SetActive(false);
-                Player.transform.position = pos[6].transform.position;
-                Player.transform.rotation = pos[6].transform.rotation;
-                mainCamera.GetComponent<UnityTemplateProjects.SimpleCameraController>().enabled = true;
-                break;
+            case 11: //back to center Table
 
-            case 30: //Activity 2.4 lerningObjective
-                Activity2_4Board.transform.GetChild(0).gameObject.SetActive(true);
-                Activity2_4InstructionsPanel.SetActive(false);
-                BoardIndexNo = 0;
-                BordsSovedMaxValue = Activity2_4Max_Value;
-                ActivityEndPanelNo = 31;
-                break;
-            case 31: //Activity 2.4 End
-                Activity2_4EndPanel.SetActive(true);
-                Activity2_4InstructionsPanel.SetActive(false);
-                break;
+                Highlite.transform.GetChild(3).GetComponent<Animation>().Stop();
+                Highlite.transform.GetChild(3).GetComponent<Image>().color = Color.white;
+                Highlite.transform.GetChild(2).GetComponent<Animation>().Play();
 
-            case 32: //Activity 2 Summary
-                Activity2_4EndPanel.SetActive(false);
-                Activity2_Summary.SetActive(true);
-                break;
-            case 33: //Activity 3 Start
-                Activity2lerningObjaectivePanel.SetActive(false);
-                Activity2_Summary.SetActive(false);
-                Activity2_4EndPanel.SetActive(false);
-                Activity3objective.SetActive(true);
-                mainCamera.GetComponent<UnityTemplateProjects.SimpleCameraController>().enabled = false;
-                Activity2_4Board.transform.GetChild(1).gameObject.SetActive(false);
-                Player.transform.position = pos[7].transform.position;
-                Player.transform.rotation= pos[7].transform.rotation;
-                mainCamera.GetComponent<UnityTemplateProjects.SimpleCameraController>().enabled = true;
-                break;
-            case 34: //Activity 3 lerningObjective
-                Activity3objective.SetActive(false);
-                Activity3objective1.SetActive(true);
-                break;
-            case 35: //Activity 3 lerningObjective
-                Activity3objective.SetActive(false);
-                Activity3objective1.SetActive(false);
-                Activity3SpawnPoints.SetActive(true);
-                DragObj.SetActive(true);
-                break;
+                Screen6panel.SetActive(true);
 
-
-            //Activity3 Spawn points 1
-
-            case 36:
-                mainCamera.GetComponent<UnityTemplateProjects.SimpleCameraController>().enabled = false;
-                Player.transform.position = pos[7].transform.position;
-                Player.transform.rotation = pos[7].transform.rotation;
-                mainCamera.GetComponent<UnityTemplateProjects.SimpleCameraController>().enabled = true;
-                break;
-            case 37:
-                mainCamera.GetComponent<UnityTemplateProjects.SimpleCameraController>().enabled = false;
-                Player.transform.position = pos[8].transform.position;
-                Player.transform.rotation = pos[8].transform.rotation;
-                mainCamera.GetComponent<UnityTemplateProjects.SimpleCameraController>().enabled = true;
-                break;
-            case 38:
-                mainCamera.GetComponent<UnityTemplateProjects.SimpleCameraController>().enabled = false;
-                Player.transform.position = pos[9].transform.position;
-                Player.transform.rotation = pos[9].transform.rotation;
-                mainCamera.GetComponent<UnityTemplateProjects.SimpleCameraController>().enabled = true;
-                break;
-            #endregion
-
-            case 39:
-                Activity4Istrution.SetActive(false);
-                Activity4Questions.SetActive(true);
-                break;
-
-            case 40:
-                Status.SetActive(false);
-                Questions1(QuestionNo);
-                Activity4Questions.SetActive(true);
+                Screen4Panel.SetActive(false);
+                Screen5Panel.SetActive(false);
                
+                mainCamera.GetComponent<UnityTemplateProjects.SimpleCameraController>().enabled = false;
+                Player.transform.position = playerPos[2].transform.position;
+                Player.transform.rotation = playerPos[2].transform.rotation;
+                mainCamera.GetComponent<UnityTemplateProjects.SimpleCameraController>().enabled = true;
+                CompletePi1.SetActive(false);
+                Screen6panel.transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text = "We are now going to plan the risk response.\n\nColumn " + QuestionNo+" in the following table lists five responses to this risk. For each of these responses, choose the corresponding risk response type (A–F). Each risk response type can be used once, more than once, or not at all.";
                 break;
 
+            case 12:
+                Screen6panel.SetActive(false);
+                Screen7panel.SetActive(true);
+                break;
 
-            case 41: //Op1 F
-                OptionSelected = "F";
-                Questions(QuestionNo);
+            case 13:
+                Screen6panel.SetActive(false);
+                Screen7panel.SetActive(false);
+                QuestionSel(QuestionNo);
+                QuestionPanel.SetActive(true);
+
+                break;
+            case 14:
+
+
+
+              
+
+
+
+
                 
-               
+
+                
+                PuzzelMaxNo = 7;
+                MenuNo = 25;
+                Register1(QuestionNo);
+
                 break;
-            case 42: //Op2 B
-                OptionSelected = "B";
-                Questions(QuestionNo);
-               
+
+            case 15: // FinishColoum 
+
+
+
+
+
+
+                Screen8panel.SetActive(false);
+                Screen9panel.SetActive(true);
+                Risk1.SetActive(false); 
+
+                mainCamera.GetComponent<UnityTemplateProjects.SimpleCameraController>().enabled = false;
+                Player.transform.position = playerPos[2].transform.position;
+                Player.transform.rotation = playerPos[2].transform.rotation;
+                mainCamera.GetComponent<UnityTemplateProjects.SimpleCameraController>().enabled = true;
+
+
+
+                Highlite.transform.GetChild(2).GetComponent<Animation>().Stop();
+                Highlite.transform.GetChild(2).GetComponent<Image>().color = Color.white;
+                Highlite.transform.GetChild(0).GetComponent<Animation>().Play();
+
+
+
+
                 break;
-            case 43: //Op3 C
-                OptionSelected = "C";
-                Questions(QuestionNo);
+
+            case 18: // See What Changes in RiskBoard 
+                Screen8panel.SetActive(false);
+                Screen9panel.SetActive(false);
+                Rist2Start.SetActive(true);
+                mainCamera.GetComponent<UnityTemplateProjects.SimpleCameraController>().enabled = false;
+                Player.transform.position = playerPos[3].transform.position;
+                Player.transform.rotation = playerPos[3].transform.rotation;
+                mainCamera.GetComponent<UnityTemplateProjects.SimpleCameraController>().enabled = true;
+
+
+                PuzzelMaxNo = 2;
+                MenuNo = 26;
+
+                Register2(QuestionNo);
+                
+
+
+                break;
+            case 19: // See What Changes in Pi 
+                Screen8panel.SetActive(false);
+                Screen9panel.SetActive(false);
+                mainCamera.GetComponent<UnityTemplateProjects.SimpleCameraController>().enabled = false;
+                Player.transform.position = playerPos[4].transform.position;
+                Player.transform.rotation = playerPos[4].transform.rotation;
+                mainCamera.GetComponent<UnityTemplateProjects.SimpleCameraController>().enabled = true;
+                Risk2.SetActive(false);
+
+
+                Boardpi2(QuestionNo);
+                PuzzelMaxNo = 1;
+                MenuNo = 27;
+
+                break;
+
+            case 20: // See What Changes in Pi 
+
+                Highlite.transform.GetChild(0).GetComponent<Animation>().Stop();
+                Highlite.transform.GetChild(0).GetComponent<Image>().color = Color.white;
+                Highlite.transform.GetChild(1).GetComponent<Animation>().Play();
+
+
+                
+
+                CompletePi2.SetActive(false);
+                    
+
+                Screen8panel.SetActive(false);
+                Screen9panel.SetActive(false);
+                Screen10panel.SetActive(true);
+                mainCamera.GetComponent<UnityTemplateProjects.SimpleCameraController>().enabled = false;
+                Player.transform.position = playerPos[2].transform.position;
+                Player.transform.rotation = playerPos[2].transform.rotation;
+                mainCamera.GetComponent<UnityTemplateProjects.SimpleCameraController>().enabled = true;
+
+
+
+
+                break;
+
+            case 21: // StartSecond
+                CallQuestions(QuestionNo);
+                Screensaver.SetActive(true);
+                break;
+
+            case 22: // End RedistryDes1
+                CompleteDes.SetActive(true);
+                break;
+
+            case 23: // End Pi1
+                CompletePi1.SetActive(true);
+                break;
+            case 24: // End Pi1
+
+                CompletePi1.SetActive(true);
+                break;
+            case 25: // End Pi1
+                Risk1.SetActive(true);
+                break;
+            case 26: // End Pi1
+                Risk2.SetActive(true);
+                break;
+            case 27: // End Pi2
+                CompletePi2.SetActive(true);
+                break;
+
+
+
+            case 28: // Select Activity 2
+
+                mainCamera.GetComponent<UnityTemplateProjects.SimpleCameraController>().enabled = false;
+                Player.transform.position = playerPos[6].transform.position;
+                Player.transform.rotation = playerPos[6].transform.rotation;
+                mainCamera.GetComponent<UnityTemplateProjects.SimpleCameraController>().enabled = true;
+                break;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            case 40: // Select D
+
+                SelectedAns = "D";
+                AnsSelect(QuestionNo);
+                break;
+            case 41: // Select A
+
+                SelectedAns = "A";
+                AnsSelect(QuestionNo);
+                break;
+            case 42: // Select B
+
+                SelectedAns = "B";
+                AnsSelect(QuestionNo);
+                break;
+            case 43: // Select C
+
+                SelectedAns = "C";
+                AnsSelect(QuestionNo);
+                break;
+            case 44: // Select B
+
+                SelectedAns = "B";
+                AnsSelect(QuestionNo);
+                break;
+            case 45: // WrongAns
+                AnsSelect(QuestionNo);
+
+                break;
+
+            case 46: //QuestionSatus
+                if (CheckAns)
+                {
+                    Menu(14);
+                    Screen9panel.SetActive(true);
+                    QuestionStatus.SetActive(false);
+                    
+                    Menu(14);
+                }
+                else
+                {
+                    QuestionStatus.SetActive(false);
+                    QuestionPanel.SetActive(true);
+                }
+
+
+                break;
+
+            case 47: //OptionA
+                StartCoroutine(TakingAdvice(1));
+
+                Questions.SetActive(false);
+                break;
+            case 48: //OptionB
+                StartCoroutine(TakingAdvice(2));
+
+                Questions.SetActive(false);
+                break;
+            case 49: //OptionC
+                StartCoroutine(TakingAdvice(3));
+
+                Questions.SetActive(false);
+                break;
+            case 50: //OptionD
+                StartCoroutine(TakingAdvice(4));
+
+                Questions.SetActive(false);
+                break;
+
+
+            case 51:
+                AllQ(Question_NO, 0);
+                QuestionsIstructionPanel.SetActive(false);
+                Questions.SetActive(true);
                 
                 break;
-            case 44: //Op4 D
-                OptionSelected = "D";
-                Questions(QuestionNo);
+
+            case 52:// Saying
                 
+                //Saying.SetActive(true);
+                RightAnswer.SetActive(false);
+                AskQuestion = true;
+
+                if (ISAnsTrue)
+                {
+                    Answers.SetActive(true);
+                    ISAnsTrue = false;
+                }
+                else
+                {
+                    Answers.SetActive(false);
+                    Questions.SetActive(true);
+                    AllQ(Question_NO, 0);
+
+                }
+
+
+                if (Question_NO == 3)
+                {
+                    Question_NO = 1;
+                    Answers.SetActive(false);
+                    Questions.SetActive(true);
+                    AllQ(Question_NO, 0);
+                }
+
+
+
                 break;
-            case 45: //Op5 E
-                OptionSelected = "E";
-                Questions(QuestionNo);
-                
-                break;
 
-            case 46: //WrongngAns
-                Activity4Questions.SetActive(false);
-                Status.SetActive(true);
-                Activity4StatrusText.text = "Please try another answer";
-                Status.transform.GetChild(0).GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text = "TryAgain";
-
+            case 53:
+                Rist2Start.SetActive(false);    
                 break;
 
 
-
-
+           
 
 
 
@@ -525,13 +603,12 @@ public class MenuManager : MonoBehaviour
 
     public void PuzzelNo()
     {
-         BoardIndexNo ++;
-        if (BordsSovedMaxValue == BoardIndexNo)
+        PuzzelIndex++;
+        if (PuzzelIndex == PuzzelMaxNo)
         {
-            Menu(ActivityEndPanelNo);
-            Debug.Log("sOLVED");
+            Menu(MenuNo);
+            PuzzelIndex = 0;
         }
-        
 
 
     }
@@ -558,152 +635,385 @@ public class MenuManager : MonoBehaviour
     }
     #endregion
 
-    IEnumerator TakingAdvice(int No) // call Wait For taking Advice
-    {  
-        yield return new WaitForSeconds(2);
-       
-    }
+    
 
 
-    void Questions1(int No)
+    void QuestionSel(int No)
     {
         switch (No)
         {
-            case 0:
-                Activity4QuestionText.text = "The lead Trainer has advised training the management team before the store staff based on her experience in order to improve the rollout success.";
-
-                break;
-
             case 1:
-                Activity4QuestionText.text = "The FloorIT project manager is waiting for approval to move to the first delivery stage. The project board must approve the project initiation documentation.";
-
-                break;
-
-            case 2:
-                Activity4QuestionText.text = "The training pilot will commence once the 'Project Diary Tablet' is completed. Its completion will allow 'Project Diary Training' to commence.";
-
-                break;
-
-            case 3:
-                Activity4QuestionText.text = "The project manager has been informed by the lead trainer that the piloting of the course can only start on time once the finalised design of the course has been signed off by the learning and development director on time.";
-
-                break;
-
-            case 4:
-                Activity4QuestionText.text = "The recruitment of trainers will be handled by a recruitment agency.";
-
-                break;
-
-
-
-        }
-      
-    }
-
-
-    void Questions(int No)
-    {
-       
-        switch (No)
-        {
-            case 0:
-                Activity4QuestionText.text = "The lead Trainer has advised training the management team before the store staff based on her experience in order to improve the rollout success.";
-
-                if (OptionSelected == "F")
-                {
-                    Activity4StatrusText.text = "The correct answer is option F). The lead trainer is recalling lessons learnt from her experience in a previous project.";
-
-                    QuestionNo++;
-                    Status.transform.GetChild(0).GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text = "Next";
-                }
-                else
-                {
-                    Activity4StatrusText.text = "Please try another answer";
-                    Status.transform.GetChild(0).GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text = "TryAgain";
-                }
-                break;
-
-            case 1:
-                Activity4QuestionText.text = "The FloorIT project manager is waiting for approval to move to the first delivery stage. The project board must approve the project initiation documentation.";
-
-
-                if (OptionSelected == "B")
-                {
-                    Activity4StatrusText.text = "The correct answer is option B). In this question before stage one can commence the project initiation documentation must be approved. Therefore this is a 'plan prerequisite', something fundamental that needs to be in place before stage one can start.";
-                    QuestionNo++;
-                    Status.transform.GetChild(0).GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text = "Next";
-                }
-                else
-                {
-                    Activity4StatrusText.text = "Please try another answer";
-                    Status.transform.GetChild(0).GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text = "TryAgain";
-                }
-
-
-                break;
-
-            case 2:
-                Activity4QuestionText.text = "The training pilot will commence once the 'Project Diary Tablet' is completed. Its completion will allow 'Project Diary Training' to commence.";
-
-                if (OptionSelected == "C")
-                {
-                    Activity4StatrusText.text = "The correct answer is option C). In this question the project in the scenario is dependent on and external project and its completion. Therefore this is an external dependency.";
-                    QuestionNo++;
-                    Status.transform.GetChild(0).GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text = "Next";
-                }
-                else
-                {
-                    Activity4StatrusText.text = "Please try another answer";
-                    Status.transform.GetChild(0).GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text = "TryAgain";
-                }
-
-
-                break;
-
-            case 3:
-                Activity4QuestionText.text = "The project manager has been informed by the lead trainer that the piloting of the course can only start on time once the finalised design of the course has been signed off by the learning and development director on time.";
-
-                if (OptionSelected == "D")
-                {
-                    Activity4StatrusText.text = "The correct answer is option D). In this question there is a planning assumption the project. The project manager would mote that the plan is based on the assumption that the sign off must be completed on time for the piloting to commence on time.";
-                    QuestionNo++;
-                    Status.transform.GetChild(0).GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text = "Next";
-                }
-                else
-                {
-                    Activity4StatrusText.text = "Please try another answer";
-                    Status.transform.GetChild(0).GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text = "TryAgain";
-                }
-
-
-                break;
-
-            case 4:
-                Activity4QuestionText.text = "The recruitment of trainers will be handled by a recruitment agency.";
-
-                if (OptionSelected == "E")
-                {
-                    Activity4StatrusText.text = "The correct answer is option E). In this question there is a delivery approach to consider. The recruitment will not be managed by the HR department in FloorIT but outsourced to a recruitment agency.";
-                    QuestionNo= 0 ;
-                    Status.transform.GetChild(0).GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text = "Next";
-                }
-                else
-                {
-                    Activity4StatrusText.text = "Please try another answer";
-                    Status.transform.GetChild(0).GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text = "TryAgain";
-                }
-
-
-                break;
+                QuestionText.text = "Question 1: There is a growing concern that the long term recruitment agency to FloorIT may not be able to recruit the team of trainers in time. Ensure the contract stipulates the agency are financially penalised if there are any time delays.";
                
+                break;
+            case 2:
+                QuestionText.text = "Question 2: FloorIT decides to cancel the new Diary system and the training required and continue with the existing approach because the risk of losing customers with untrained staff is too high.";
+                break;
+            case 3:
+                QuestionText.text = "Question 3: It may be advisable to widen the selection process and contact more recruitment agencies.";
+                break;
+            case 4:
+                QuestionText.text = "Question 4: It has been suggested that if the recruitment agency is unable to source enough suitable candidates within a short time frame they should be switched to another agency.";
+                break;
+            case 5:
+                QuestionText.text = "Question 5: It has been suggested that training staff should be selected from FloorIT to ensure there if a full delivery team.";
+                break;
+        }
+        
+    }
+    void AnsSelect(int No)
+    {
+        StatusText.text = "Please try another answer";
+        QuestionStatus.transform.GetChild(0).GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text = "TryAgain";
+        CheckAns = false;
+
+        switch (No)
+        {
+            case 1:
+                if (SelectedAns == "D")
+                {
+                    StatusText.text = "Solution \nTransfer. With the addition of the stipulation in the contract with the recruitment agency, the project is transferring some of the financial risk to the outsourced agency.\n\n" +
+                        "Ok thank you, that is the correct risk response. Please go to the register and fill it out. \nAll the tiles have to be put in the correct space for the description and then question " + (QuestionNo) + ".column " + (QuestionNo) + " only.";
+                    QuestionStatus.transform.GetChild(0).GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text = "Next";
+                    CheckAns = true;
+                    QuestionNo++;
+                }
+                break;
+            case 2:
+                if (SelectedAns == "A")
+                {
+                    StatusText.text = "Solution \nSometimes doing nothing and cancelling the project is the preferred choice. In doing so the risk is eliminated and therefore avoided.\n\n" +
+                        "Ok thank you, that is the correct risk response. Please go to the register and fill it out. \nAll the tiles have to be put in the correct space for the description and then question " + (QuestionNo) + ".column " + (QuestionNo) + " only."; ;
+                    QuestionStatus.transform.GetChild(0).GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text = "Next";
+                    CheckAns = true;
+                    QuestionNo++;
+                }
+                break;
+            case 3:
+                if (SelectedAns == "B")
+                {
+                    StatusText.text = "Solution \nIn spreading the contract for the recruitment of trainers to many agencies the likelihood of not hiring enough quality trainers will reduce the impact and probability of the risk.\n\n" +
+                        "Ok thank you, that is the correct risk response. Please go to the register and fill it out. \nAll the tiles have to be put in the correct space for the description and then question " + (QuestionNo) + ".column " + (QuestionNo) + " only."; ;
+                    QuestionStatus.transform.GetChild(0).GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text = "Next";
+                    CheckAns = true;
+                    QuestionNo++;
+                }
+                break;
+            case 4:
+                if (SelectedAns == "C")
+                {
+                    StatusText.text = "Solution \nThis option involves preparing now, but not taking action now. It is a reactive response and one where a contingent plan is prepared if the agency fails to deliver.\n\n" +
+                        "Ok thank you, that is the correct risk response. Please go to the register and fill it out. \nAll the tiles have to be put in the correct space for the description and then question " + (QuestionNo) + ".column " + (QuestionNo ) + " only."; ;
+                    QuestionStatus.transform.GetChild(0).GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text = "Next";
+                    CheckAns = true;
+                    QuestionNo++;
+                }
+                break;
+            case 5:
+                if (SelectedAns == "B")
+                {
+                    StatusText.text = "Solution \nIn this option, the delivery approach is to source from in-house thereby removing the risk of not having a delivery team in place on time.\n" +
+                        "Ok thank you, that is the correct risk response. Please go to the register and fill it out. \nAll the tiles have to be put in the correct space for the description and then question " + (QuestionNo - 1) + ".column " + (QuestionNo - 1) + " only."; ;
+                    QuestionStatus.transform.GetChild(0).GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text = "Next";
+                    CheckAns = true;
+                    QuestionNo++;
+                }
+                break;
+
+                
+
 
 
         }
-        Activity4Questions.SetActive(false);
-        Status.SetActive(true);
+
+        
+
+        QuestionPanel.SetActive(false);
+        QuestionStatus.SetActive(true);
+
+
+    }
+    void CallQuestions(int No)
+    {
+        switch (No)        
+        {
+            case 1:
+                VideoCallText.text = "scenario 1 \nGood morning. My name is Daniel and I have been asked to discuss five risk scenarios with you. Let me start with Risk scenario 1 and input on the following risk. Let me start with the first. There is a growing concern that the long term recruitment agency to FloorIT may not be able to recruit the team of trainers in time. In my assessment I believe the risk summary profile has a high probability and a very high impact. But of course it is your final decision.";
+                break;
+            case 2:
+                VideoCallText.text = "There is a discussion that the project may be cancelled";
+                break;
+            case 3:
+                VideoCallText.text = "It may be advisable to widen the selection process and contacting more recruitment agencies.";
+                break;
+            case 4:
+                VideoCallText.text = "It has been suggested that training staff should be selected from FloorIT to ensure there if a full delivery team.";
+
+                break;
+            case 5:
+                VideoCallText.text = "It has been suggested that training staff should be selected from FloorIT and seconded to the project to ensure there if a full delivery team.";
+                break;
+        }
+    }
+
+    void Boardpi1(int No)
+    {
+        if (QuestionNo == 1)
+        {
+
+        }
+        else
+        {
+            Pi1boards[QuestionNo - 2].SetActive(false);
+        }           
+        Pi1boards[QuestionNo - 1].SetActive(true);
+    }
+    void Boardpi2(int No)
+    {
+        if (QuestionNo == 2)
+        {
+
+        }
+        else
+        {
+            Pi2boards[QuestionNo - 3].SetActive(false);
+        }
+       
+        Pi2boards[QuestionNo - 2].SetActive(true);
+    }
+    void Register1(int No)
+    {
+        Reqister1boards[QuestionNo -1].SetActive(true);
+
+        mainCamera.GetComponent<UnityTemplateProjects.SimpleCameraController>().enabled = false;
+        Player.transform.position = RiskB1pos[QuestionNo - 1].transform.position;
+        Player.transform.rotation = RiskB1pos[QuestionNo - 1].transform.rotation;
+        mainCamera.GetComponent<UnityTemplateProjects.SimpleCameraController>().enabled = true;
+
+
+
+
+
+
+    }
+    void Register2(int No)
+    {
+        Reqister2boards[QuestionNo - 2].SetActive(true);
+
+        if (No == 3)
+        {
+            PuzzelMaxNo = 3;
+        }
+
+
+
+        if (No == 2)
+        {
+
+        }
+        else
+        {
+            Reqister2boards[QuestionNo - 3].transform.GetChild(0).gameObject.SetActive(false);
+        }
+    }
+
+
+    IEnumerator TakingAdvice(int No)
+    {
+
+        yield return new WaitForSeconds(2);
+        RightAnswer.SetActive(true);
+        AllQ(Question_NO, No);
 
     }
 
+    void AllQ(int QNO, int ANO)
+    {
+        string QuestionText;
+        ISAnsTrue = false;
+
+
+        AllAnswers[0].color = Color.white;
+        AllAnswers[1].color = Color.white;
+        AllAnswers[2].color = Color.white;
+        AllAnswers[3].color = Color.white;
+
+
+        AllAnswers[0].transform.parent.gameObject.GetComponent<Image>().sprite = NonSelect;
+        AllAnswers[1].transform.parent.gameObject.GetComponent<Image>().sprite = NonSelect;
+        AllAnswers[2].transform.parent.gameObject.GetComponent<Image>().sprite = NonSelect;
+        AllAnswers[3].transform.parent.gameObject.GetComponent<Image>().sprite = NonSelect;
+
+
+
+
+        switch (QNO)
+        {
+            case 1:
+                QuestionText = "1:</font><indent=1em> FloorIT despite experiencing a fall in revenue are still one of the market leaders. The CEO has reservations about the project moving forward as a failure of trained staff with a new diary system may further dent revenue and lead to reputational damage. The CEO has asked the project manager to investigate this risk. The project manager has recommended closing the project. Is this appropriate, and why or why not?";
+                Question.text = QuestionText;
+                Question1.text = QuestionText;
+
+
+
+
+                if (AskQuestion)
+                {
+                   // NpcAudio.clip = Resources.Load<AudioClip>("Audio/A2-Q" + QNO);
+                   // NpcAudio.Play();
+                }
+
+
+
+                Options[0].text = "No because this is not one of the risk responses proscribed within PRINCE2.";
+                Options[1].text = "No, because the closure of the project is not a valid planned risk response.";
+                Options[2].text = "Yes, because the closure of a project is a possibility and therefore a valid planned risk response.";
+                Options[3].text = " Yes, because the closure of projects should always occur if there is a serious risk.";
+
+                AllAnswers[0].text = "Incorrect. Closure of a project can be a proportionate response to a valid risk.";
+                AllAnswers[1].text = "Incorrect. Closure of a project can be a proportionate response to a valid risk.";
+                AllAnswers[2].text = "Correct. Closure of a project is a valid risk response when it is proportionate.";
+                AllAnswers[3].text = "Incorrect. Closure of a project may be appropriate, but will not always have to occur when there is a serious risk.";
+
+                AllAnswers[0].color = Color.white;
+                AllAnswers[1].color = Color.white;
+                AllAnswers[2].color = new Color32(2, 156, 0, 255);
+                AllAnswers[2].transform.parent.gameObject.GetComponent<Image>().sprite = SpriteSelectedAns;
+                AllAnswers[3].color = Color.white;
+
+
+
+
+
+                switch (ANO)
+                {
+                    case 1:
+                        AnswerStatus.text = "As you advised, we didn’t respond to the risk with a planned closure. It is important that the response to the risk is proportional to the potential impact that the risk might have. The lessons learnt are that In this example, closing the project should have been deemed as a proportionate response to a further major loss in revenue and reputational damage.";
+
+                        //NpcAudio.clip = Resources.Load<AudioClip>("Audio/A2-Q1-OP1");
+                        //NpcAudio.Play();
+
+
+                        ButtionText.text = "Try Again";
+
+                        break;
+                    case 2:
+                        AnswerStatus.text = "As you advised, we didn’t respond to the risk with a planned closure. It is important that the response to the risk is proportional to the potential impact that the risk might have. The lessons learnt are that In this example, closing the project should have been deemed as a proportionate response to a further major loss in revenue and reputational damage.";
+
+                       // NpcAudio.clip = Resources.Load<AudioClip>("Audio/A2-Q1-OP1");
+                      //  NpcAudio.Play();
+
+                        ButtionText.text = "Try Again";
+
+                        break;
+                    case 3:
+                        AnswerStatus.text = "Thankyou for your advice. That’s what Quality assurance has told us also. It’s good that we are all in agreement. Let’s review the reason why.";
+
+                       // NpcAudio.clip = Resources.Load<AudioClip>("Audio/A2-Q1-OP3");
+                       // NpcAudio.Play();
+
+                        ButtionText.text = "Solution";
+
+                        Question_NO++;
+                        ISAnsTrue = true;
+                        break;
+                    case 4:
+                        AnswerStatus.text = "Thankyou for your advice. Whilst closure is a possibility it is not mandatory for it to always be the planned response to a serious risk. Let’s review the reason why.";
+
+                       // NpcAudio.clip = Resources.Load<AudioClip>("Audio/A2-Q1-OP4");
+                       // NpcAudio.Play();
+
+                        ButtionText.text = "Solution";
+
+                        
+
+                        break;
+                }
+                break;
+
+
+
+
+            case 2:
+                QuestionText = "2:</font><indent=1em> The project manager having assessed the risk of not being able to attract sufficient quality trainers, will have to ensure that the job specification is enhanced for trainers leading to an increase in the daily rate of payment to trainers. This is required in order to attract high quality trainers to ensure the success of the project. The Executive has provided approval of the over spend to be funded from the change budget. Is this appropriate, and why or why not?";
+                Question.text = QuestionText;
+                Question1.text = QuestionText;
+
+                if (AskQuestion)
+                {
+                   // NpcAudio.clip = Resources.Load<AudioClip>("Audio/A2-Q" + QNO);
+                   // NpcAudio.Play();
+                }
+
+
+                Options[0].text = "Yes, because this is a change and therefore funding from the change budget is appropriate.";
+                Options[1].text = "Yes, because this change is an off-specification and a change and therefore funding from the change budget is appropriate.";
+                Options[2].text = "No, because risk should be funded from the project tolerance budget.";
+                Options[3].text = "No, because risks should be funded from a risk budget. A risk is a threat that has not occurred and this is different to a change request.";
+
+                AllAnswers[0].text = "Incorrect. A risk should be funded from a risk budget and not the change budget.";
+                AllAnswers[1].text = "Incorrect. A risk should be funded from a risk budget and not the change budget.";
+                AllAnswers[2].text = "Incorrect. A risk should be funded from a risk budget and not the change budget.";
+                AllAnswers[3].text = "Correct. A risk should be funded from a risk budget and not the change budget.";
+                AllAnswers[0].color = new Color32(2, 156, 0, 255);
+                AllAnswers[0].transform.parent.gameObject.GetComponent<Image>().sprite = SpriteSelectedAns;
+                AllAnswers[1].color = Color.white;
+                AllAnswers[2].color = Color.white;
+                AllAnswers[3].color = Color.white;
+
+
+
+                switch (ANO)
+                {
+                    case 1:
+                        AnswerStatus.text = "Thankyou for the advice. Having consulted quality assurance we have concluded that this is in fact a risk and not a change and therefore it is not appropriate. The lessons learnt are that risks should be funded from the risk budget.";
+                       
+
+                       // NpcAudio.clip = Resources.Load<AudioClip>("Audio/A2-Q2-OP1");
+                       // NpcAudio.Play();
+
+                        ButtionText.text = "Solution";
+
+                        break;
+                    case 2:
+                        AnswerStatus.text = "Thankyou for the advice. Having consulted quality assurance we have concluded that this is in fact a risk and not a change and therefore it is not appropriate. The lessons learnt are that risks should be funded from the risk budget.";
+
+                        //NpcAudio.clip = Resources.Load<AudioClip>("Audio/A2-Q2-OP2");
+                       // NpcAudio.Play();
+
+                        
+
+                        ButtionText.text = "Solution";
+
+                        break;
+                    case 3:
+                        AnswerStatus.text = "Thankyou for the advice. Having consulted quality assurance we have concluded that this is in fact a risk and not an overspend and therefore it is not appropriate to fund this from the tolerance budget. The lessons learnt are that risks should be funded from the risk budget.";
+
+                        //NpcAudio.clip = Resources.Load<AudioClip>("Audio/A2-Q2-OP3");
+                        //NpcAudio.Play();
+
+                        ButtionText.text = "Try Again";
+
+                        break;
+                    case 4:
+                        AnswerStatus.text = "Thankyou for your advice. That’s what Quality assurance has told us also. It’s good that we are all in agreement. Let’s review the reason why.";
+
+                        //NpcAudio.clip = Resources.Load<AudioClip>("Audio/A2-Q2-OP4");
+                        //NpcAudio.Play();
+
+                        Question_NO++;
+                        ISAnsTrue = true;
+
+                        ButtionText.text = "Try Again";
+
+                        break;
+                }
+                break;
+
+        }
+        AskQuestion = false;
+
+    }
 
 
 }

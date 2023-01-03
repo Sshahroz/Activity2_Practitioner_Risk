@@ -14,7 +14,7 @@ public class Tile : MonoBehaviour
     [SerializeField] Vector3 transformval;
     [SerializeField] Vector3 Rotation;
 
-    [SerializeField] Image Status;
+    [SerializeField] SpriteRenderer Status;
 
     [SerializeField] Sprite Wrong, Right;
 
@@ -31,7 +31,7 @@ public class Tile : MonoBehaviour
         transformval = transform.position;
 
 
-        Status = transform.GetChild(0).gameObject.GetComponent<Image>();
+        Status = transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>();
         Status.enabled = false;
 
 
@@ -132,6 +132,12 @@ public class Tile : MonoBehaviour
 
 
     }
+
+
+
+
+
+
 
 
 }

@@ -61,7 +61,7 @@ public class DragObj : MonoBehaviour
                 if (IsMoveObj && MovingObj != null)
                 {
                   
-                    MovingObj.transform.localPosition = new Vector3(Pointer.transform.position.x, Pointer.transform.position.y, 8.054514f);
+                    MovingObj.transform.localPosition = new Vector3(2.469f, Pointer.transform.position.y, Pointer.transform.position.z);
                 }
                 else
                 {

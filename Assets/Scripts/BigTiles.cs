@@ -10,7 +10,7 @@ public class BigTiles : MonoBehaviour
     [SerializeField] string Lock;
 
     [SerializeField] Sprite Wrong, Right;
-    [SerializeField] Image Status;
+    [SerializeField] SpriteRenderer Status;
 
 
     [SerializeField] string ObjName;
@@ -19,7 +19,7 @@ public class BigTiles : MonoBehaviour
 
     private void Start()
     {
-        Status = transform.GetChild(0).GetChild(1).gameObject.GetComponent<Image>();
+        Status = transform.GetChild(0).GetComponent<SpriteRenderer>();
 
 
         Wrong = Resources.Load<Sprite>("images/wrong");
@@ -36,6 +36,8 @@ public class BigTiles : MonoBehaviour
             Debug.Log("Hello");
             Status.sprite = Right;
             Status.enabled = true;
+            transform.position = other.transform.position;
+            transform.GetComponent<BoxCollider>().enabled = false;
         }
         else if (other.tag == "Block" && Chk)
         {
