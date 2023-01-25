@@ -1,0 +1,1050 @@
+fileFormatVersion: 2
+guid: 0e3f5180a67b2724583e478be3d7e8ac
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable:
+  - first:
+      74: 3850043890821368968
+    second: Circle|Take 01_Circle
+  - first:
+      74: -6137974964155510879
+    second: Circle|Take 01_Circle.001
+  - first:
+      74: 2477117046179598990
+    second: Circle|Take 01_Circle.002
+  - first:
+      74: -6998445382390720466
+    second: Circle|Take 01_Circle.003
+  - first:
+      74: -8473149549111104943
+    second: Circle|Take 01_Circle.004
+  - first:
+      74: 8661141527646062019
+    second: Circle|Take 01_Circle.005
+  - first:
+      74: -8392192653011146125
+    second: Circle|Take 01_Circle.006
+  - first:
+      74: 5370140906155302893
+    second: Circle|Take 01_Circle.007
+  - first:
+      74: -6775862930812198181
+    second: Circle|Take 01_Circle.008
+  - first:
+      74: -5411920571077338133
+    second: Circle|Take 01_Circle.009
+  - first:
+      74: -4956496503939735041
+    second: Circle|Take 01_Circle.010
+  - first:
+      74: -2635359582113991846
+    second: Circle|Take 01_Circle.011
+  - first:
+      74: -9167511891568374205
+    second: Circle|Take 01_Cube
+  - first:
+      74: 4594143284350425637
+    second: Circle|Take 01_Cube.001
+  - first:
+      74: 3139034174109433598
+    second: Circle|Take 01_Cube.002
+  - first:
+      74: -1765846755850008410
+    second: Circle|Take 01_Cube.003
+  - first:
+      74: 3900926168912372874
+    second: Circle|Take 01_Cylinder
+  - first:
+      74: 7765059868303554176
+    second: Circle|Take 01_Cylinder.001
+  - first:
+      74: -998529444807597739
+    second: Circle|Take 01_Cylinder.002
+  - first:
+      74: 3617985342987336636
+    second: Circle|Take 01_Cylinder.003
+  - first:
+      74: 5249154765915167361
+    second: Circle|Take 01_Sphere
+  - first:
+      74: -7198060591926964098
+    second: Circle|Take 01_Sphere.001
+  - first:
+      74: -4667599613206264277
+    second: Circle|Take 01_Sphere.002
+  - first:
+      74: -8508408857444947914
+    second: Circle|Take 01_Sphere.003
+  - first:
+      74: 1420195639674101040
+    second: Circle.001|Take 01_Circle
+  - first:
+      74: -2237254553477420534
+    second: Circle.001|Take 01_Circle.001
+  - first:
+      74: -2782394712345185995
+    second: Circle.001|Take 01_Circle.002
+  - first:
+      74: 9153964097869949146
+    second: Circle.001|Take 01_Circle.003
+  - first:
+      74: -6292584011576133181
+    second: Circle.001|Take 01_Circle.004
+  - first:
+      74: -545773961434418079
+    second: Circle.001|Take 01_Circle.005
+  - first:
+      74: -4650394736729834219
+    second: Circle.001|Take 01_Circle.006
+  - first:
+      74: -3947795641352611852
+    second: Circle.001|Take 01_Circle.007
+  - first:
+      74: 7612862844296814265
+    second: Circle.001|Take 01_Circle.008
+  - first:
+      74: 5043922934567920851
+    second: Circle.001|Take 01_Circle.009
+  - first:
+      74: -2411742431148914147
+    second: Circle.001|Take 01_Circle.010
+  - first:
+      74: 1205309180437620736
+    second: Circle.001|Take 01_Circle.011
+  - first:
+      74: 5982188565803672345
+    second: Circle.001|Take 01_Cube
+  - first:
+      74: -8895157414229439176
+    second: Circle.001|Take 01_Cube.001
+  - first:
+      74: 7457620751531729499
+    second: Circle.001|Take 01_Cube.002
+  - first:
+      74: 2678487068947549372
+    second: Circle.001|Take 01_Cube.003
+  - first:
+      74: -4521831022957807013
+    second: Circle.001|Take 01_Cylinder
+  - first:
+      74: 6019523177129583248
+    second: Circle.001|Take 01_Cylinder.001
+  - first:
+      74: 5412025696559672571
+    second: Circle.001|Take 01_Cylinder.002
+  - first:
+      74: 6383169974721062377
+    second: Circle.001|Take 01_Cylinder.003
+  - first:
+      74: 7038744258318698128
+    second: Circle.001|Take 01_Sphere
+  - first:
+      74: 1616987758041926006
+    second: Circle.001|Take 01_Sphere.001
+  - first:
+      74: -508868118472798743
+    second: Circle.001|Take 01_Sphere.002
+  - first:
+      74: 6618810070989595878
+    second: Circle.001|Take 01_Sphere.003
+  - first:
+      74: -5847292150115379181
+    second: Cube|Take 01_Circle
+  - first:
+      74: 3560639631693400148
+    second: Cube|Take 01_Circle.001
+  - first:
+      74: 2868711850006936158
+    second: Cube|Take 01_Circle.002
+  - first:
+      74: 2116426499918990739
+    second: Cube|Take 01_Circle.003
+  - first:
+      74: 1660620101629414016
+    second: Cube|Take 01_Circle.004
+  - first:
+      74: 205923223252448371
+    second: Cube|Take 01_Circle.005
+  - first:
+      74: 7166710574064948165
+    second: Cube|Take 01_Circle.006
+  - first:
+      74: -951526129860597912
+    second: Cube|Take 01_Circle.007
+  - first:
+      74: 2354429189524432453
+    second: Cube|Take 01_Circle.008
+  - first:
+      74: 6461918446211406570
+    second: Cube|Take 01_Circle.009
+  - first:
+      74: -6048933861542990528
+    second: Cube|Take 01_Circle.010
+  - first:
+      74: -5395654559754934640
+    second: Cube|Take 01_Circle.011
+  - first:
+      74: 3238306984577732163
+    second: Cube|Take 01_Cube
+  - first:
+      74: 6203875634216328144
+    second: Cube|Take 01_Cube.001
+  - first:
+      74: -933406339762158446
+    second: Cube|Take 01_Cube.002
+  - first:
+      74: -2105445596407366137
+    second: Cube|Take 01_Cube.003
+  - first:
+      74: 2155284638227543359
+    second: Cube|Take 01_Cylinder
+  - first:
+      74: -5075879088512092713
+    second: Cube|Take 01_Cylinder.001
+  - first:
+      74: 3003896363100155199
+    second: Cube|Take 01_Cylinder.002
+  - first:
+      74: -2032657375163735196
+    second: Cube|Take 01_Cylinder.003
+  - first:
+      74: 1489330081151892420
+    second: Cube|Take 01_Sphere
+  - first:
+      74: 6816935009065911272
+    second: Cube|Take 01_Sphere.001
+  - first:
+      74: 5951033703206243532
+    second: Cube|Take 01_Sphere.002
+  - first:
+      74: -3075658755187538230
+    second: Cube|Take 01_Sphere.003
+  - first:
+      74: 7023551124310071395
+    second: Sphere|Take 01_Circle
+  - first:
+      74: 397470512477974418
+    second: Sphere|Take 01_Circle.001
+  - first:
+      74: -7149789046335781830
+    second: Sphere|Take 01_Circle.002
+  - first:
+      74: 1803535852261008635
+    second: Sphere|Take 01_Circle.003
+  - first:
+      74: -4097319564624419067
+    second: Sphere|Take 01_Circle.004
+  - first:
+      74: -2787872282716490134
+    second: Sphere|Take 01_Circle.005
+  - first:
+      74: -3528177800118074136
+    second: Sphere|Take 01_Circle.006
+  - first:
+      74: 8090310897879153097
+    second: Sphere|Take 01_Circle.007
+  - first:
+      74: 5224799042883077493
+    second: Sphere|Take 01_Circle.008
+  - first:
+      74: -6328541055728580293
+    second: Sphere|Take 01_Circle.009
+  - first:
+      74: -8243543076745921710
+    second: Sphere|Take 01_Circle.010
+  - first:
+      74: -7741386733575020733
+    second: Sphere|Take 01_Circle.011
+  - first:
+      74: 8263784826731065767
+    second: Sphere|Take 01_Cube
+  - first:
+      74: 1105203696265825357
+    second: Sphere|Take 01_Cube.001
+  - first:
+      74: -8900873978631680911
+    second: Sphere|Take 01_Cube.002
+  - first:
+      74: 1782759233921812521
+    second: Sphere|Take 01_Cube.003
+  - first:
+      74: 8411090426015481322
+    second: Sphere|Take 01_Cylinder
+  - first:
+      74: 7457217218507857249
+    second: Sphere|Take 01_Cylinder.001
+  - first:
+      74: 4708667433105331075
+    second: Sphere|Take 01_Cylinder.002
+  - first:
+      74: 6520367415956212459
+    second: Sphere|Take 01_Cylinder.003
+  - first:
+      74: 2185671422550152277
+    second: Sphere|Take 01_Sphere
+  - first:
+      74: -5439092083654683291
+    second: Sphere|Take 01_Sphere.001
+  - first:
+      74: -1342088178818874146
+    second: Sphere|Take 01_Sphere.002
+  - first:
+      74: -4579907945748129663
+    second: Sphere|Take 01_Sphere.003
+  - first:
+      74: -3687299615293511924
+    second: Sphere.001|Take 01_Circle
+  - first:
+      74: -4930366617107745955
+    second: Sphere.001|Take 01_Circle.001
+  - first:
+      74: -7766722512013081156
+    second: Sphere.001|Take 01_Circle.002
+  - first:
+      74: 1694301914494119511
+    second: Sphere.001|Take 01_Circle.003
+  - first:
+      74: -202300967147688389
+    second: Sphere.001|Take 01_Circle.004
+  - first:
+      74: -2877094575977180017
+    second: Sphere.001|Take 01_Circle.005
+  - first:
+      74: 2248838503122545930
+    second: Sphere.001|Take 01_Circle.006
+  - first:
+      74: -4975448175167934246
+    second: Sphere.001|Take 01_Circle.007
+  - first:
+      74: -2320293074735066019
+    second: Sphere.001|Take 01_Circle.008
+  - first:
+      74: 2833082721530673893
+    second: Sphere.001|Take 01_Circle.009
+  - first:
+      74: 4874283001779248065
+    second: Sphere.001|Take 01_Circle.010
+  - first:
+      74: 5148030079771122891
+    second: Sphere.001|Take 01_Circle.011
+  - first:
+      74: -4943448781869233043
+    second: Sphere.001|Take 01_Cube
+  - first:
+      74: 6224279786424850620
+    second: Sphere.001|Take 01_Cube.001
+  - first:
+      74: 5881080276801143124
+    second: Sphere.001|Take 01_Cube.002
+  - first:
+      74: 1886201830430309841
+    second: Sphere.001|Take 01_Cube.003
+  - first:
+      74: -1620418322856912070
+    second: Sphere.001|Take 01_Cylinder
+  - first:
+      74: -6038414179437066250
+    second: Sphere.001|Take 01_Cylinder.001
+  - first:
+      74: -3782920655266885957
+    second: Sphere.001|Take 01_Cylinder.002
+  - first:
+      74: 6752388693292895696
+    second: Sphere.001|Take 01_Cylinder.003
+  - first:
+      74: -3868135751219451585
+    second: Sphere.001|Take 01_Sphere
+  - first:
+      74: 1440549416273546390
+    second: Sphere.001|Take 01_Sphere.001
+  - first:
+      74: -6967874323191183779
+    second: Sphere.001|Take 01_Sphere.002
+  - first:
+      74: -4163632895312465572
+    second: Sphere.001|Take 01_Sphere.003
+  - first:
+      74: -7733787521783835381
+    second: Cube.001|Take 01_Circle
+  - first:
+      74: 534282116957714575
+    second: Cube.001|Take 01_Circle.001
+  - first:
+      74: -5618681800032680783
+    second: Cube.001|Take 01_Circle.002
+  - first:
+      74: 3495671735253513641
+    second: Cube.001|Take 01_Circle.003
+  - first:
+      74: 8018869423927375233
+    second: Cube.001|Take 01_Circle.004
+  - first:
+      74: -1908359163744049629
+    second: Cube.001|Take 01_Circle.005
+  - first:
+      74: -5593083052054214126
+    second: Cube.001|Take 01_Circle.006
+  - first:
+      74: 1586374423895793662
+    second: Cube.001|Take 01_Circle.007
+  - first:
+      74: -4760793577263880852
+    second: Cube.001|Take 01_Circle.008
+  - first:
+      74: 1127992903390926894
+    second: Cube.001|Take 01_Circle.009
+  - first:
+      74: -3258510473219889107
+    second: Cube.001|Take 01_Circle.010
+  - first:
+      74: 6483428844554096738
+    second: Cube.001|Take 01_Circle.011
+  - first:
+      74: 2289651884268260294
+    second: Cube.001|Take 01_Cube
+  - first:
+      74: -7391167766382844567
+    second: Cube.001|Take 01_Cube.001
+  - first:
+      74: -8615976692570645207
+    second: Cube.001|Take 01_Cube.002
+  - first:
+      74: 3458069828101490221
+    second: Cube.001|Take 01_Cube.003
+  - first:
+      74: -8434166306058760132
+    second: Cube.001|Take 01_Cylinder
+  - first:
+      74: -4306835444787347181
+    second: Cube.001|Take 01_Cylinder.001
+  - first:
+      74: 3482950725769889814
+    second: Cube.001|Take 01_Cylinder.002
+  - first:
+      74: 774994132027390939
+    second: Cube.001|Take 01_Cylinder.003
+  - first:
+      74: 5463533281152955720
+    second: Cube.001|Take 01_Sphere
+  - first:
+      74: -2534525754407917561
+    second: Cube.001|Take 01_Sphere.001
+  - first:
+      74: -3334240164829052955
+    second: Cube.001|Take 01_Sphere.002
+  - first:
+      74: -9212940671375424416
+    second: Cube.001|Take 01_Sphere.003
+  - first:
+      74: -5769993886387010871
+    second: Circle.002|Take 01_Circle
+  - first:
+      74: 393347203487790838
+    second: Circle.002|Take 01_Circle.001
+  - first:
+      74: 2014297791071824863
+    second: Circle.002|Take 01_Circle.002
+  - first:
+      74: -6659341257742700850
+    second: Circle.002|Take 01_Circle.003
+  - first:
+      74: 5682987287275261608
+    second: Circle.002|Take 01_Circle.004
+  - first:
+      74: 6903940853859982258
+    second: Circle.002|Take 01_Circle.005
+  - first:
+      74: -7802791564943721017
+    second: Circle.002|Take 01_Circle.006
+  - first:
+      74: -2288968058885724515
+    second: Circle.002|Take 01_Circle.007
+  - first:
+      74: 1926611312733536315
+    second: Circle.002|Take 01_Circle.008
+  - first:
+      74: 112871790813913278
+    second: Circle.002|Take 01_Circle.009
+  - first:
+      74: 6487926334156088234
+    second: Circle.002|Take 01_Circle.010
+  - first:
+      74: -6262090936231251392
+    second: Circle.002|Take 01_Circle.011
+  - first:
+      74: 645263595811935162
+    second: Circle.002|Take 01_Cube
+  - first:
+      74: 4299810931636475299
+    second: Circle.002|Take 01_Cube.001
+  - first:
+      74: 8072900273262423821
+    second: Circle.002|Take 01_Cube.002
+  - first:
+      74: -5773093238668020921
+    second: Circle.002|Take 01_Cube.003
+  - first:
+      74: 7964907846139822254
+    second: Circle.002|Take 01_Cylinder
+  - first:
+      74: -6054049167865453138
+    second: Circle.002|Take 01_Cylinder.001
+  - first:
+      74: -6726434884870426574
+    second: Circle.002|Take 01_Cylinder.002
+  - first:
+      74: 1730418721751459472
+    second: Circle.002|Take 01_Cylinder.003
+  - first:
+      74: 6997917671001158653
+    second: Circle.002|Take 01_Sphere
+  - first:
+      74: -1750703601909079260
+    second: Circle.002|Take 01_Sphere.001
+  - first:
+      74: 1561559259549009614
+    second: Circle.002|Take 01_Sphere.002
+  - first:
+      74: 496892922661148359
+    second: Circle.002|Take 01_Sphere.003
+  - first:
+      74: 7983269316556779116
+    second: Circle.003|Take 01_Circle
+  - first:
+      74: 202092733358017320
+    second: Circle.003|Take 01_Circle.001
+  - first:
+      74: 6153935388039190088
+    second: Circle.003|Take 01_Circle.002
+  - first:
+      74: 3609627285526802694
+    second: Circle.003|Take 01_Circle.003
+  - first:
+      74: -4418588177534213101
+    second: Circle.003|Take 01_Circle.004
+  - first:
+      74: 5220394870871578977
+    second: Circle.003|Take 01_Circle.005
+  - first:
+      74: -2866759757383746296
+    second: Circle.003|Take 01_Circle.006
+  - first:
+      74: 1638610981740980330
+    second: Circle.003|Take 01_Circle.007
+  - first:
+      74: -651107639913410640
+    second: Circle.003|Take 01_Circle.008
+  - first:
+      74: 3788386175497709941
+    second: Circle.003|Take 01_Circle.009
+  - first:
+      74: 2728777364582789195
+    second: Circle.003|Take 01_Circle.010
+  - first:
+      74: -7207219130930067828
+    second: Circle.003|Take 01_Circle.011
+  - first:
+      74: -3035795170125099240
+    second: Circle.003|Take 01_Cube
+  - first:
+      74: -8639750869075631483
+    second: Circle.003|Take 01_Cube.001
+  - first:
+      74: 3233523580706221932
+    second: Circle.003|Take 01_Cube.002
+  - first:
+      74: -9166709721076948139
+    second: Circle.003|Take 01_Cube.003
+  - first:
+      74: 1251617464144230740
+    second: Circle.003|Take 01_Cylinder
+  - first:
+      74: 7426693466110656740
+    second: Circle.003|Take 01_Cylinder.001
+  - first:
+      74: 6616475514122483741
+    second: Circle.003|Take 01_Cylinder.002
+  - first:
+      74: -5449996462941632471
+    second: Circle.003|Take 01_Cylinder.003
+  - first:
+      74: 5782631228836852871
+    second: Circle.003|Take 01_Sphere
+  - first:
+      74: 5710214621872485585
+    second: Circle.003|Take 01_Sphere.001
+  - first:
+      74: -2239138326993829296
+    second: Circle.003|Take 01_Sphere.002
+  - first:
+      74: -3258612884141318889
+    second: Circle.003|Take 01_Sphere.003
+  - first:
+      74: -1569744166454510348
+    second: Circle.004|Take 01_Circle
+  - first:
+      74: 2702813637395279249
+    second: Circle.004|Take 01_Circle.001
+  - first:
+      74: -9039663315841761285
+    second: Circle.004|Take 01_Circle.002
+  - first:
+      74: -6116531449746649938
+    second: Circle.004|Take 01_Circle.003
+  - first:
+      74: 3514285607664056429
+    second: Circle.004|Take 01_Circle.004
+  - first:
+      74: 3382179793304963213
+    second: Circle.004|Take 01_Circle.005
+  - first:
+      74: -7315374006401837501
+    second: Circle.004|Take 01_Circle.006
+  - first:
+      74: 8383433448633159585
+    second: Circle.004|Take 01_Circle.007
+  - first:
+      74: 6836686819431922777
+    second: Circle.004|Take 01_Circle.008
+  - first:
+      74: -7975701802057726552
+    second: Circle.004|Take 01_Circle.009
+  - first:
+      74: 281848706317739201
+    second: Circle.004|Take 01_Circle.010
+  - first:
+      74: 1896814105164452125
+    second: Circle.004|Take 01_Circle.011
+  - first:
+      74: 774670753682708467
+    second: Circle.004|Take 01_Cube
+  - first:
+      74: -6230352166270465847
+    second: Circle.004|Take 01_Cube.001
+  - first:
+      74: 23194104860647698
+    second: Circle.004|Take 01_Cube.002
+  - first:
+      74: 5818973726863998431
+    second: Circle.004|Take 01_Cube.003
+  - first:
+      74: 622253422315591067
+    second: Circle.004|Take 01_Cylinder
+  - first:
+      74: -1514678665814608072
+    second: Circle.004|Take 01_Cylinder.001
+  - first:
+      74: 5842208135741009417
+    second: Circle.004|Take 01_Cylinder.002
+  - first:
+      74: 1070521158737816425
+    second: Circle.004|Take 01_Cylinder.003
+  - first:
+      74: -1565477845104406114
+    second: Circle.004|Take 01_Sphere
+  - first:
+      74: 6771096739809879020
+    second: Circle.004|Take 01_Sphere.001
+  - first:
+      74: -7632295533597877596
+    second: Circle.004|Take 01_Sphere.002
+  - first:
+      74: 7071375147940682155
+    second: Circle.004|Take 01_Sphere.003
+  - first:
+      74: 5473936056254446741
+    second: Circle.005|Take 01_Circle
+  - first:
+      74: 8351286421737537799
+    second: Circle.005|Take 01_Circle.001
+  - first:
+      74: -1348861632801443368
+    second: Circle.005|Take 01_Circle.002
+  - first:
+      74: -7203482010236951094
+    second: Circle.005|Take 01_Circle.003
+  - first:
+      74: -4328641690683537976
+    second: Circle.005|Take 01_Circle.004
+  - first:
+      74: -6291376020878707234
+    second: Circle.005|Take 01_Circle.005
+  - first:
+      74: -8482694122039022766
+    second: Circle.005|Take 01_Circle.006
+  - first:
+      74: 8893280998129214376
+    second: Circle.005|Take 01_Circle.007
+  - first:
+      74: 1012622270714820125
+    second: Circle.005|Take 01_Circle.008
+  - first:
+      74: -2090543198955427997
+    second: Circle.005|Take 01_Circle.009
+  - first:
+      74: -5117188739970961091
+    second: Circle.005|Take 01_Circle.010
+  - first:
+      74: -8503611448688103218
+    second: Circle.005|Take 01_Circle.011
+  - first:
+      74: 7390830071038605663
+    second: Circle.005|Take 01_Cube
+  - first:
+      74: -5274196580349977792
+    second: Circle.005|Take 01_Cube.001
+  - first:
+      74: 4596185661326481811
+    second: Circle.005|Take 01_Cube.002
+  - first:
+      74: -8007846080723690682
+    second: Circle.005|Take 01_Cube.003
+  - first:
+      74: -2132856160093178070
+    second: Circle.005|Take 01_Cylinder
+  - first:
+      74: 6367034659671026273
+    second: Circle.005|Take 01_Cylinder.001
+  - first:
+      74: -3745998765957379505
+    second: Circle.005|Take 01_Cylinder.002
+  - first:
+      74: -731475323893610630
+    second: Circle.005|Take 01_Cylinder.003
+  - first:
+      74: -1578632084161649775
+    second: Circle.005|Take 01_Sphere
+  - first:
+      74: -8552133386830915007
+    second: Circle.005|Take 01_Sphere.001
+  - first:
+      74: -3450235406941542749
+    second: Circle.005|Take 01_Sphere.002
+  - first:
+      74: -2713017854586849485
+    second: Circle.005|Take 01_Sphere.003
+  - first:
+      74: -6930855046593717978
+    second: Cylinder|Take 01_Circle
+  - first:
+      74: -4894413646844851604
+    second: Cylinder|Take 01_Circle.001
+  - first:
+      74: 8525820986107735285
+    second: Cylinder|Take 01_Circle.002
+  - first:
+      74: 3369333688974582921
+    second: Cylinder|Take 01_Circle.003
+  - first:
+      74: 62936996956348024
+    second: Cylinder|Take 01_Circle.004
+  - first:
+      74: -2679296387266614063
+    second: Cylinder|Take 01_Circle.005
+  - first:
+      74: 6641571802261433134
+    second: Cylinder|Take 01_Circle.006
+  - first:
+      74: -4001716971440059569
+    second: Cylinder|Take 01_Circle.007
+  - first:
+      74: 5426834729499594913
+    second: Cylinder|Take 01_Circle.008
+  - first:
+      74: -6318285277684481855
+    second: Cylinder|Take 01_Circle.009
+  - first:
+      74: 7573825302526404168
+    second: Cylinder|Take 01_Circle.010
+  - first:
+      74: -4068216319225092133
+    second: Cylinder|Take 01_Circle.011
+  - first:
+      74: -8217654976088441368
+    second: Cylinder|Take 01_Cube
+  - first:
+      74: 4633379154807962026
+    second: Cylinder|Take 01_Cube.001
+  - first:
+      74: -5924432803622276951
+    second: Cylinder|Take 01_Cube.002
+  - first:
+      74: 7095580451679463439
+    second: Cylinder|Take 01_Cube.003
+  - first:
+      74: 2942935928637570869
+    second: Cylinder|Take 01_Cylinder
+  - first:
+      74: -5597507559939621421
+    second: Cylinder|Take 01_Cylinder.001
+  - first:
+      74: 243882957031834109
+    second: Cylinder|Take 01_Cylinder.002
+  - first:
+      74: -3565365264391988156
+    second: Cylinder|Take 01_Cylinder.003
+  - first:
+      74: 5922556804828206002
+    second: Cylinder|Take 01_Sphere
+  - first:
+      74: 7776225312116508214
+    second: Cylinder|Take 01_Sphere.001
+  - first:
+      74: -4871576564385815517
+    second: Cylinder|Take 01_Sphere.002
+  - first:
+      74: -581570190347101043
+    second: Cylinder|Take 01_Sphere.003
+  - first:
+      74: -7492502972362886701
+    second: Cylinder.001|Take 01_Circle
+  - first:
+      74: 9078364230789145610
+    second: Cylinder.001|Take 01_Circle.001
+  - first:
+      74: -7861773815579392601
+    second: Cylinder.001|Take 01_Circle.002
+  - first:
+      74: 4720975148866303460
+    second: Cylinder.001|Take 01_Circle.003
+  - first:
+      74: -6577341323807954622
+    second: Cylinder.001|Take 01_Circle.004
+  - first:
+      74: -4270493182955046842
+    second: Cylinder.001|Take 01_Circle.005
+  - first:
+      74: 836583094698976531
+    second: Cylinder.001|Take 01_Circle.006
+  - first:
+      74: 579009825649888304
+    second: Cylinder.001|Take 01_Circle.007
+  - first:
+      74: -5302944541335884270
+    second: Cylinder.001|Take 01_Circle.008
+  - first:
+      74: -5403863583646632281
+    second: Cylinder.001|Take 01_Circle.009
+  - first:
+      74: 761015126593596289
+    second: Cylinder.001|Take 01_Circle.010
+  - first:
+      74: -1874923555353970510
+    second: Cylinder.001|Take 01_Circle.011
+  - first:
+      74: 1590927729707694749
+    second: Cylinder.001|Take 01_Cube
+  - first:
+      74: 8906272021673476250
+    second: Cylinder.001|Take 01_Cube.001
+  - first:
+      74: 4958992774621365896
+    second: Cylinder.001|Take 01_Cube.002
+  - first:
+      74: -7495029693386318970
+    second: Cylinder.001|Take 01_Cube.003
+  - first:
+      74: 8257669142889633266
+    second: Cylinder.001|Take 01_Cylinder
+  - first:
+      74: -8019989037506262192
+    second: Cylinder.001|Take 01_Cylinder.001
+  - first:
+      74: -4851207830217180388
+    second: Cylinder.001|Take 01_Cylinder.002
+  - first:
+      74: 6108250418164244216
+    second: Cylinder.001|Take 01_Cylinder.003
+  - first:
+      74: -3285281847334031743
+    second: Cylinder.001|Take 01_Sphere
+  - first:
+      74: 7486835619650029692
+    second: Cylinder.001|Take 01_Sphere.001
+  - first:
+      74: 4324548605643675487
+    second: Cylinder.001|Take 01_Sphere.002
+  - first:
+      74: 1065014131953240716
+    second: Cylinder.001|Take 01_Sphere.003
+  - first:
+      74: 885944232402757753
+    second: Armature|Action
+  - first:
+      74: 4781951162920444690
+    second: Armature|ArmatureAction
+  - first:
+      74: -7254070304306877837
+    second: Armature|Drone
+  - first:
+      74: -821043204966730881
+    second: Armature|Take 01_Circle
+  - first:
+      74: -6559786581467473079
+    second: Armature|Take 01_Circle.001
+  - first:
+      74: 6808337681851774166
+    second: Armature|Take 01_Circle.002
+  - first:
+      74: 5338650899409450861
+    second: Armature|Take 01_Circle.003
+  - first:
+      74: -4474934828822126319
+    second: Armature|Take 01_Circle.004
+  - first:
+      74: -3280420708915506542
+    second: Armature|Take 01_Circle.005
+  - first:
+      74: 5694701053516405614
+    second: Armature|Take 01_Circle.006
+  - first:
+      74: 4663253638722190955
+    second: Armature|Take 01_Circle.007
+  - first:
+      74: -1313350405320017044
+    second: Armature|Take 01_Circle.008
+  - first:
+      74: 5669881496471528678
+    second: Armature|Take 01_Circle.009
+  - first:
+      74: -8801528515981767061
+    second: Armature|Take 01_Circle.010
+  - first:
+      74: -1011174567988449954
+    second: Armature|Take 01_Circle.011
+  - first:
+      74: -2562568071736737028
+    second: Armature|Take 01_Cube
+  - first:
+      74: -4179818355091316929
+    second: Armature|Take 01_Cube.001
+  - first:
+      74: -3710837768094725171
+    second: Armature|Take 01_Cube.002
+  - first:
+      74: 2310568559410504949
+    second: Armature|Take 01_Cube.003
+  - first:
+      74: -8050366831989117376
+    second: Armature|Take 01_Cylinder
+  - first:
+      74: -1644986256421215123
+    second: Armature|Take 01_Cylinder.001
+  - first:
+      74: 4087056353930491038
+    second: Armature|Take 01_Cylinder.002
+  - first:
+      74: -8384691461741610286
+    second: Armature|Take 01_Cylinder.003
+  - first:
+      74: -8310917635868201562
+    second: Armature|Take 01_Sphere
+  - first:
+      74: -333904244411622915
+    second: Armature|Take 01_Sphere.001
+  - first:
+      74: -8536679223455801811
+    second: Armature|Take 01_Sphere.002
+  - first:
+      74: -6755097441804195394
+    second: Armature|Take 01_Sphere.003
+  - first:
+      74: -8618077018010346737
+    second: Armature|Droneeee
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 0
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

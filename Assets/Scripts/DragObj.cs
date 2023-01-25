@@ -8,7 +8,7 @@ using UnityEngine;
 public class DragObj : MonoBehaviour
 {
     [SerializeField] GameObject Pointer;
-    [SerializeField] bool IsMoveObj;
+    public bool IsMoveObj;
     [SerializeField] GameObject MovingObj;
 
     float SmoothSpeed = 0.125f;
@@ -48,8 +48,8 @@ public class DragObj : MonoBehaviour
         if (Physics.Raycast(ray, out hit))
         {
           
-            Vector3 SmoothPos = Vector3.Lerp(Pointer.transform.position, hit.point, SmoothSpeed);
-            Pointer.transform.position = SmoothPos;
+           
+            Pointer.transform.position = hit.point;
 
             //LayerBoaed
             if (hit.transform.gameObject.CompareTag("Move"))

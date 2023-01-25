@@ -78,10 +78,11 @@ public class Tile : MonoBehaviour
         }
         else if (other.tag == "Block")
         {
-            transform.GetComponent<BoxCollider>().enabled = false;
-            transform.GetComponent<Rigidbody>().Equals(false);
             transform.GetComponent<Rigidbody>().useGravity = false;
             transform.GetComponent<Rigidbody>().isKinematic = true;
+            //transform.GetComponent<BoxCollider>().enabled = false;
+            transform.GetComponent<Rigidbody>().Equals(false);
+           
             //transform.GetComponent<WebXR.Interactions.MouseDragObject>().enabled = false;
             transform.position = other.transform.position;
             transform.rotation = other.transform.rotation;
@@ -106,12 +107,13 @@ public class Tile : MonoBehaviour
 
 
         yield return new WaitForSeconds(1);
-        transform.position = transformval;
-        Status.enabled = false;
-        transform.GetComponent<BoxCollider>().enabled = true;
-        transform.GetComponent<Rigidbody>().Equals(true);
         transform.GetComponent<Rigidbody>().useGravity = true;
         transform.GetComponent<Rigidbody>().isKinematic = false;
+        transform.position = transformval;
+        Status.enabled = false;
+        //transform.GetComponent<BoxCollider>().enabled = true;
+        transform.GetComponent<Rigidbody>().Equals(true);
+      
         //transform.GetComponent<WebXR.Interactions.MouseDragObject>().enabled = true;
 
 

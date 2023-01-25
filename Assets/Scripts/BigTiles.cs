@@ -33,11 +33,15 @@ public class BigTiles : MonoBehaviour
     {
         if (other.name == RightNo && Chk)
         {
-            Debug.Log("Hello");
+           
             Status.sprite = Right;
             Status.enabled = true;
             transform.position = other.transform.position;
             transform.GetComponent<BoxCollider>().enabled = false;
+            FindObjectOfType<DragObj>().IsMoveObj = false;
+            FindObjectOfType<MenuManager>().PuzzelNo();
+
+
         }
         else if (other.tag == "Block" && Chk)
         {

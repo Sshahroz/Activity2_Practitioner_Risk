@@ -166,7 +166,7 @@ namespace GoogleVR.HelloVR
 
         private void Start()
         {
-           
+            imgCircle = GameObject.FindGameObjectWithTag("Img").GetComponent<Image>();
             myRenderer = GetComponent<Renderer>();
             SetGazedAt(false);
         }

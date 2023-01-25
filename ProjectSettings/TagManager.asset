@@ -10,11 +10,13 @@ TagManager:
   - Out
   - Move
   - MoveLayer
+  - Img
+  - Touch
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - BoardCam
   - Water
   - UI
   - 
